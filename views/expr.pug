@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-sm-12
+        .list-group
+          a.list-group-item.active(href="#") #{meta.title}
+          each item in items
+            a.list-group-item(href=item.link) #{item.title}
